@@ -1,0 +1,312 @@
+@media(max-width:1400px) {
+    .container {
+        max-width: 1200px;
+    }
+    .header {
+        padding: 15px;
+    }
+    // .about {
+    //   &__wrapper {
+    //     grid-template-columns: minmax(auto, 406px) minmax(auto, 520px);
+    //   }
+    // }
+    // .perks {
+    //     &__wrapper {
+    //         grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    //     }
+    // }
+    .footer {
+        &__logo-name {
+            width: 180px;
+            font-size: 20px;
+        }
+        &__contacts {
+            font-size: 17px;
+        }
+        &__nav {
+            &-items {
+                width: 250px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .header {
+        padding: 15px;
+        .header__logo{
+            &-name{
+                font-size: 25px;
+                max-width: 150px;
+            }
+        }
+        &__info {
+            margin: 50px 0 0 0;
+            width: 310px;
+        }
+
+        &__contacts {
+            margin: 0;
+            a {
+                font-size: 24px;
+            }
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: minmax(auto, 385px) minmax(auto, 560px);
+        }
+    }
+    .footer {
+        &__logo {
+            &-name {
+                font-size: 20px;
+            }
+        }
+        &__nav {
+            &-items {
+                width: 280px;
+            }
+            &-item {
+                a {
+                    font-size: 20px;
+                }
+            }
+            
+        }
+        &__contacts {
+            margin-top: 40px;
+            font-size: 30px;
+            a {
+                font-size: 30px;
+            }
+        }
+    }
+}
+
+@media(max-width: 993px) {
+    .container {
+        max-width: 760px;
+    }
+    .header {
+        &__info {
+            display: none;
+        }
+    }
+    .about {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            column-gap: 10px;
+        }
+    }
+    .perks {
+        &__wrapper {
+            justify-content: center;
+        }
+        // &__items {
+        //    max-width: 350px; 
+        // }
+        &__icons {
+            width: 100px;
+            height: 100px;
+        }
+    }
+    .footer {
+        &__logo {
+            &-name {
+                width: 100%;
+                font-size: 25px;
+            }
+        }
+        &__nav {
+            margin: 0 auto;
+            &-items {
+                // margin-top: 35px;
+                width: 300px;
+            }
+            &-item {
+                font-size: 30px;
+            }
+        }
+        &__contacts {
+            font-size: 30px;
+            margin: 40px auto 0 auto;
+            a {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media(max-width: 763px) {
+    .container {
+        max-width: 570px;
+    }
+    .header {
+        .header__logo {
+            &-img {
+                width: 100px;
+                img {
+                    width: 100%;
+                }
+            }
+            &-name {
+                font-size: 15px;
+                max-width: 100px;
+            }
+        }
+        .nav {
+            &__items {
+               display: none;
+            }
+            &__btn  {
+                width: 125px;
+                height: 30px;
+                font-size: 12px;
+                padding: 0;
+                order: 1;
+            }
+            
+        }
+        &__contacts {
+            margin: 0;
+            a{
+                font-size: 15px;
+            }
+        }
+        .hamburger {
+            display: flex;
+        }
+    }
+    .about {
+        &__info {
+           max-width: 555px;
+        }
+    }
+    .perks {
+        padding-top: 10px;
+        &__items {
+            align-items: flex-start;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__header {
+            font-size: 18px ;
+            line-height: 18px;
+            // margin-top: 20px;
+        }
+        &__descr{
+            font-size: 12px;
+            line-height: 15px;
+        }
+        &__icons {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .footer {
+        padding: 0 10px 0 10px;
+        &__wrapper {
+            justify-content: center;
+        }
+        &__logo {
+            // flex-wrap: wrap;
+            // &-img {
+            //     display: block;
+            //     margin: 0 auto;
+            // }
+            &-name {
+                display: block;
+                margin-top: 20px;
+                text-align: center;
+                font-size: 25px;
+            }
+        }
+        &__nav {
+            margin: 0x auto;
+            &-items {
+                margin-top: 35px;
+                width: 300px;
+            }
+            &-item {
+                font-size: 20px;
+            }
+        }
+        &__contacts {
+            text-align: center;
+            margin: 40px auto 0 auto;
+            font-size: 30px;
+            a {
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    // .container {
+    //     max-width: 320px;
+    // }
+    .header {
+        .header__logo {
+            &-name {
+                font-size: 14px;
+            }
+        }
+        &__contacts {
+            margin: 0;
+            font-size: 12px;
+            a{
+                text-align: right;
+                font-size: 14px;
+            }
+            &::after{
+                content: '';
+                display: none
+            }
+        }
+        &__social-item {
+            img {
+                width: 35px;
+            }
+        }
+        // .nav {
+        //     &__menu-mobile {
+        //         display: block;
+        //     }
+        //     &__active {
+        //         display: block;
+        //     }
+        // }
+    }  
+   
+    
+    .about {
+        padding: 10px 0 10px 0;  
+    }
+    .perks {
+         padding-top: 10px;
+        &__items {
+            width: 320px;
+        }
+        &__info {
+            max-width: 230px;
+        }
+        &__header {
+            margin-top: 20px;
+        }
+    }
+    .perks {
+        &__items {
+            align-items: center;
+        }
+        &__icons {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}

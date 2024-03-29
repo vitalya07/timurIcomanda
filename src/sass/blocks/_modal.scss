@@ -1,0 +1,37 @@
+.modal {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    min-height: 140px;
+    background-color: #fff;
+    display: none;
+    &__close {
+        position: absolute;
+        top: -15px;
+        right: 5px;
+        font-size: 40px;
+        color: #5534b1;
+        cursor: pointer;
+    }
+
+    &__sbtitle {
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-top: 40px;
+    }
+    &__descr {
+        // margin-top: 40px;
+        color: rgb(0, 0, 0);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+}

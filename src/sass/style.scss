@@ -1,0 +1,84 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-Bold.eot') ;
+    src: url('../fonts/Formular-Bold.ttf')format('ttf');
+    src: url('../fonts/Formular-Bold.woff')format('woff');
+    src: url('../fonts/Formular-Bold.woff2')format('woff2');
+    font-weight: 700;
+    font-style: normal;
+   
+}
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-Black.eot') ;
+    src: url('../fonts/Formular-Black.ttf')format('ttf');
+    src: url('../fonts/Formular-Black.woff')format('woff');
+    src: url('../fonts/Formular-Black.woff2')format('woff2');
+    font-weight: 900;
+    font-style: normal;
+   
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-Italic.eot') ;
+    src: url('../fonts/Formular-Italic.ttf')format('ttf');
+    src: url('../fonts/Formular-Italic.woff')format('woff');
+    src: url('../fonts/Formular-Italic.woff2')format('woff2');
+    font-weight: 400;
+    font-style: normal;
+   
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-Light.eot') ;
+    src: url('../fonts/Formular-Light.ttf')format('ttf');
+    src: url('../fonts/Formular-Light.woff')format('woff');
+    src: url('../fonts/Formular-Light.woff2')format('woff2');
+    font-weight: 300;
+    font-style: normal;
+   
+}
+
+@font-face {
+    font-family: 'Formular';
+    src: url('../fonts/Formular-Medium.eot') ;
+    src: url('../fonts/Formular-Medium.ttf')format('ttf');
+    src: url('../fonts/Formular-Medium.woff')format('woff');
+    src: url('../fonts/Formular-Medium.woff2')format('woff2');
+    font-weight: 500;
+    font-style: normal;
+   
+}
+
+.container {
+    max-width:  1350px;
+    margin: 0 auto;
+    position: relative;
+    // padding: 0 15px 0 15px
+}
+
+@import 'blocks/header';
+@import 'blocks/button';
+@import 'blocks/about';
+@import 'blocks/hamburger';
+@import 'blocks/title';
+@import 'blocks/perks';
+@import 'blocks/price';
+@import 'blocks/questions';
+@import 'blocks/footer';
+@import 'blocks/popup';
+@import 'blocks/carousel';
+@import 'blocks/modal';
+@import 'blocks/pageup';
+
+
+// @import 'blocks/media';
+@import 'basic/media';

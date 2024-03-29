@@ -1,0 +1,88 @@
+.footer {
+    padding: 40px 0 40px 0;
+    background: rgb(17, 24, 39);
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-img {
+            width: 90px;
+           img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+           }
+        }
+        &-name {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 700;
+            font-size: 30px;
+            color: #fff;
+            width: 250px;
+        }
+    }
+
+    &__contacts {
+        color: rgb(249, 250, 251);
+        font-size: 36px;
+        font-weight: 900;
+        line-height: 40px;
+        letter-spacing: 0%;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        order: 2;
+        a {
+            color: rgb(249, 250, 251);
+            text-decoration: none;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        &-items {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+            width: 280px;
+            padding: 0;
+            margin: 0;
+            order: 1;
+        }
+        &-item {
+            a {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                letter-spacing: 0%;
+                text-align: left; 
+                text-decoration: none;
+                transition: .6s all;
+                &:hover {
+                    text-decoration-line: underline;
+                    color: rgb(139, 92, 246);
+                }
+            }
+        }
+    }
+
+    &__social {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+
+}

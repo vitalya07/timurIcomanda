@@ -1,0 +1,41 @@
+.carousel {
+    padding: 50px 0 50px 0;
+    // background-color: #2bac36;
+    &__wrapper {
+           position: relative;
+           max-width: 1400px;
+           margin: 0 auto;
+           padding: 0 10px 0 0;
+           div {
+                margin: 10px;
+           }
+           img {
+                max-width: 100%;
+                margin: 0 auto;
+           }
+    }
+}
+.slick-prev,  .slick-next {
+    width: 45px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -25px;
+    border: none;
+    background-color: #fff;       
+}
+
+
+.slick-next {
+    left: auto  ;
+    right: -25px ;
+} 
+.slick-dots {
+    display: flex;
+    justify-content: space-around;
+    button {
+        display: none;
+    }
+}
+
+
